@@ -124,6 +124,10 @@
   .galaxy-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+    .section-glare h1{
+    width: 80%;
+    font-size: 40px;
+  }
 }
 
 /* Mobile - 1 article per row */
