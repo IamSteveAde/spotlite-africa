@@ -119,3 +119,23 @@
     .nav-comet:hover {
       background: #0891b2;
     }
+    /* Tablet - 2 articles per row */
+@media (max-width: 1024px) {
+  .galaxy-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile - 1 article per row */
+@media (max-width: 768px) {
+  .galaxy-grid {
+    grid-template-columns: 1fr;
+  }
+  .section-glare h1{
+    width: 80%;
+    font-size: 40px;
+  }
+}
+.ppp{
+    color: #06b6d4;
+}
