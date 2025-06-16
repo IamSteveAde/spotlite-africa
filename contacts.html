@@ -179,34 +179,46 @@
                             </div>
                         </div>
                         <h6 class="  font-weight-bold mb-3">Contact Us</h6>
-                        <form>
-                            <div class="form-row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control p-4" placeholder="Your Name" required="required"/>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control p-4" placeholder="Your Email" required="required"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control p-4" placeholder="Subject" required="required"/>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" rows="4" placeholder="Message" required="required"></textarea>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;"
-                                    type="submit">Send Message</button>
-                            </div>
-                        </form>
+                        <form id="contactForm" action="https://formsubmit.co/adediranstephen2000@gmail.com" method="POST">
+  <div class="form-row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <input type="text" name="name" class="form-control p-4" placeholder="Your Name" required />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <input type="email" name="email" class="form-control p-4" placeholder="Your Email" required />
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <input type="text" name="subject" class="form-control p-4" placeholder="Subject" required />
+  </div>
+  <div class="form-group">
+    <textarea name="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+  </div>
+
+  <!-- Success message placeholder -->
+  <div id="formSuccessMsg" style="display: none; color: green; font-weight: 500; margin-bottom: 10px;">
+    ✅ Your message has been sent successfully.
+  </div>
+
+  <div>
+    <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;" type="submit">
+      Send Message
+    </button>
+  </div>
+
+  <!-- Hidden inputs for FormSubmit -->
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_template" value="box" />
+</form>
+
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <!-- Social Follow Start -->
+                    <!-- Social Follow Start 
                     <div class="mb-3">
                         <div class="section-title mb-0">
                             <h4 class="m-0   font-weight-bold">Follow Us</h4>
@@ -246,14 +258,14 @@
                             <h4 class="m-0   font-weight-bold">Newsletter</h4>
                         </div>
                         <div class="bg-white text-center border border-top-0 p-3">
-                            <p>Aliqu justo et labore at eirmod justo sea erat diam dolor diam vero kasd</p>
+                            <p>Every Week, Spotlite Africa brings you powerful short stories of the changemakers shaping Africa's future</p>
                             <div class="input-group mb-2" style="width: 100%;">
                                 <input type="text" class="form-control form-control-lg" placeholder="Your Email">
                                 <div class="input-group-append">
                                     <button class="btn btn-primary font-weight-bold px-3">Sign Up</button>
                                 </div>
                             </div>
-                            <small>Lorem ipsum dolor sit amet elit</small>
+                            <small>Real People. Real Change. Delivered Weekly</small>
                         </div>
                     </div>
                     <!-- Newsletter End -->
@@ -336,6 +348,29 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $('#contactForm').on('submit', function (e) {
+    e.preventDefault();
+
+    $.ajax({
+      url: $(this).attr('action'),
+      method: 'POST',
+      data: $(this).serialize()
+    })
+    .done(function () {
+      // Show success message
+      $('#formSuccessMsg').fadeIn(300).delay(3000).fadeOut(300);
+      $('#contactForm')[0].reset();
+    })
+    .fail(function () {
+      // Optional fallback if FormSubmit fails completely
+      alert('Something went wrong. Please check your internet connection or try again later.');
+    });
+  });
+</script>
+
 </body>
 
 </html>
