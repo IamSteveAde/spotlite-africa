@@ -35,8 +35,9 @@
 
     // Main News carousel
     $(".main-carousel").owlCarousel({
+        animateOut: 'fadeOut',
         autoplay: true,
-        smartSpeed: 1500,
+        smartSpeed: 500,
         items: 1,
         dots: true,
         loop: true,

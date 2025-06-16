@@ -16,15 +16,14 @@
   }
 
   .luxeAura_heading {
-    font-size: 2.5rem;
-    color: #1a1a1a;
+   
+    
     margin-bottom: 1.5rem;
     font-weight: 700;
   }
 
   .luxeAura_paragraph {
-    font-size: 1.1rem;
-    color: #555;
+    
     max-width: 700px;
     margin-bottom: 2rem;
     line-height: 1.8;
@@ -44,8 +43,7 @@
   .luxeAura_list {
     list-style: none;
     padding: 0;
-    font-size: 1rem;
-    color: #444;
+    
     line-height: 2;
   }
 

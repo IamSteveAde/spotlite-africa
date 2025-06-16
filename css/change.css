@@ -1,0 +1,120 @@
+/* HERO SECTION */
+.lux_heroSection {
+  background: url('/img/retro-world-theatre-day-scenes-with-curtains-stage.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.lux_heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+}
+
+.lux_heroSubtitle {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #eee;
+}
+
+/* FILTER SECTION */
+.lux_filterSection {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.lux_searchBar {
+  padding: 0.75rem 1.2rem;
+  width: 60%;
+  max-width: 500px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.lux_filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.lux_select {
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* CHANGEMAKERS GRID */
+.lux_changemakersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background: #fff;
+}
+
+.lux_card {
+  text-decoration: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  animation: fadeSlideUp 0.8s ease forwards;
+}
+
+.lux_card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.lux_cardImage {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.lux_cardText {
+  padding: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.lux_cardName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.lux_cardIndustry {
+  color: #777;
+  font-size: 0.95rem;
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media screen and (max-width: 768px) {
+  .lux_heroTitle { font-size: 2.2rem; }
+  .lux_searchBar { width: 90%; }
+}
