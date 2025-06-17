@@ -58,7 +58,7 @@
 /* CHANGEMAKERS GRID */
 .lux_changemakersGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
   gap: 2rem;
   padding: 2rem;
 
@@ -117,4 +117,11 @@
 @media screen and (max-width: 768px) {
   .lux_heroTitle { font-size: 2.2rem; }
   .lux_searchBar { width: 90%; }
+  .lux_changemakersGrid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+
+}
 }
