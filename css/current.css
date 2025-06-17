@@ -1,6 +1,6 @@
  :root {
       --cyan: #06b6d4;
-      --text: #111827;
+      
       --bg: #f9fafb;
       --card-bg: #ffffff;
     }
@@ -72,7 +72,7 @@
 
     .star-img {
       width: 100%;
-      height: 200px;
+      height: auto;
       object-fit: cover;
     }
 
