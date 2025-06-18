@@ -1,102 +1,90 @@
-.elegant-form-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5rem 2rem;
-  background: linear-gradient(120deg, #f0f0f0, #ffffff);
-  min-height: 100vh;
-}
 
-.glass-panel {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 20px;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
-  padding: 3rem;
-  max-width: 600px;
-  width: 100%;
-  animation: fadeIn 1.2s ease-in-out;
-  position: relative;
-}
-
-.headline-glow {
+.eliteApplySection {
+  
+  padding: 6rem 2rem;
+  color: #fff;
   text-align: center;
-  font-size: 2rem;
+  
+  position: relative;
+  overflow: hidden;
+}
+body{
+   background: linear-gradient(135deg, #0000005a, #1a1a1a);
+
+}
+.eliteApplyContent {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.eliteApplyHeading {
+  font-size: 2.8rem;
   font-weight: 700;
-  color: #111;
-  margin-bottom: 2rem;
-}
-
-.lux-field {
+  color: #ffcc00;
   margin-bottom: 1.5rem;
+  animation: fadeInUp 1s ease-out forwards;
 }
 
-.lux-field label {
+.eliteApplySubtext {
+  font-size: 1.125rem;
+  line-height: 1.9;
+  color: #dddddd;
+  margin-bottom: 1.8rem;
+  animation: fadeInUp 1.4s ease-out forwards;
+}
+
+.eliteApplyCTA {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  font-weight: 500;
+  color: #fff;
+  animation: fadeInUp 1.6s ease-out forwards;
+}
+
+.eliteApplyLink {
+  display: inline-block;
+  margin-top: 0.7rem;
+  color: #ffcc00;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #ffcc00;
+  transition: all 0.3s ease-in-out;
+}
+
+.eliteApplyLink:hover {
+  color: #fff;
+  background-color: #ffcc00;
+  border-radius: 4px;
+  padding: 0.3rem 1rem;
+}
+
+.eliteHighlight {
+  color: #2ecc71;
   font-weight: 600;
-  color: #222;
-  display: block;
-  margin-bottom: 0.5rem;
 }
 
-.lux-field input,
-.lux-field textarea {
-  width: 100%;
-  padding: 0.8rem;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-  transition: all 0.3s ease;
+/* Fade Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.lux-field input:focus,
-.lux-field textarea:focus {
-  outline: none;
-  border-color: #000;
-  background-color: #fafafa;
-}
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .eliteApplyHeading {
+    font-size: 2rem;
+  }
 
-.file-preview {
-  font-size: 0.85rem;
-  color: #555;
-  margin-top: 0.3rem;
-}
-
-.lux-button {
-  background-color: #000;
-  color: white;
-  width: 100%;
-  padding: 1rem;
-  border: none;
-  border-radius: 12px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.lux-button:hover {
-  background-color: #444;
-}
-
-.popup-flash {
-  position: absolute;
-  top: -60px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #3cb371;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  font-size: 1rem;
-  display: none;
-  animation: slideDownFade 3s ease forwards;
-}
-
-@keyframes slideDownFade {
-  0% { opacity: 0; transform: translate(-50%, -40px); }
-  50% { opacity: 1; transform: translate(-50%, 0); }
-  100% { opacity: 0; transform: translate(-50%, -40px); }
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; transform: scale(0.95); }
-  100% { opacity: 1; transform: scale(1); }
+  .eliteApplySubtext,
+  .eliteApplyCTA {
+    font-size: 1rem;
+  }
 }
