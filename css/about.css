@@ -327,6 +327,8 @@
   width: 95%;
   text-align: center;
   color: #000;
+  
+
 }
 .africaColorCycle {
   animation: colorCycle 5s infinite ease-in-out;
