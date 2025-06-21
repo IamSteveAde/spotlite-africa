@@ -133,7 +133,7 @@
 }
 
 .sptValueItem {
-  background: white;
+  background: rgba(255, 255, 255, 0.389);
   flex: 0 0 calc(33.333% - 1.5rem);
   padding: 2rem;
   border-radius: 16px;
@@ -207,14 +207,22 @@
 
 @media screen and (max-width: 768px) {
   .sptValueItem {
-    flex: 0 0 100%;
+    flex: 0 0 150%;
+    overflow-y: hidden;
     text-align: center;
+    margin-left: -50px;
+    box-shadow: none;
+    border-radius: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
+  
 
   .sptConnectorLine {
     display: none;
   }
 }
+
 
 /* Fade-in animation */
 .fadeInZoom {
@@ -233,8 +241,8 @@
   }
 }
 .legacyContainer {
-  max-width: 900px;
-  margin: 0 auto;
+  width: 100%;
+  
   text-align: center;
   padding: 6rem 2rem;
   position: relative;
@@ -253,7 +261,9 @@
   border-radius: 18px;
   box-shadow: 0 18px 48px rgba(0, 0, 0, 0.08);
   padding: 2rem;
+  width: 100vw;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
+ 
 }
 
 .legacyCard:hover {
@@ -268,8 +278,8 @@
 }
 
 .legacyImage {
-  width: 100%;
-  height: auto;
+  width: 60%;
+ 
   transition: transform 0.6s ease;
   display: block;
 }
@@ -312,6 +322,10 @@
 
   .legacyCard {
     padding: 1.5rem;
+   
+  }
+  .mess{
+    width: 100%;
   }
 }
 .hes{
@@ -342,3 +356,4 @@
   75%  { color: #000000; } /* Black */
   100% { color: #e63946; } /* Back to Red */
 }
+

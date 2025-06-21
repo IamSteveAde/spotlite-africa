@@ -64,6 +64,9 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+    .star-title{
+      font-size: 18px;
+    }
 
     .star-card:hover {
       transform: translateY(-5px);
