@@ -8,10 +8,7 @@
   position: relative;
   overflow: hidden;
 }
-body{
-   background: linear-gradient(135deg, #0000005a, #1a1a1a);
 
-}
 .eliteApplyContent {
   max-width: 900px;
   margin: 0 auto;
@@ -87,4 +84,69 @@ body{
   .eliteApplyCTA {
     font-size: 1rem;
   }
+}
+/* CSS */
+.spotlite-section {
+ 
+  color: #f5f5f5;
+  padding: 80px 20px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spotlite-container {
+  max-width: 700px;
+  text-align: center;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  padding: 50px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: 0 0 40px rgba(59, 51, 1, 0.453);
+  transition: transform 0.3s ease;
+}
+
+.spotlite-container:hover {
+  transform: scale(1.01);
+}
+
+.spotlite-title {
+  font-size: 2rem;
+  color: #2ecc71;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.spotlite-subtext {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #363636;
+}
+
+.brand {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.spotlite-cta {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #0f0f0f;
+  background: linear-gradient(90deg, #ffd700, #2ecc71);
+  padding: 15px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.spotlite-cta:hover {
+  background: linear-gradient(90deg, #ffcc00, #ffd700);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  text-decoration: none;
+  transition: 2s;
 }
