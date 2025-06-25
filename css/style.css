@@ -9515,11 +9515,15 @@ a.text-dark:hover, a.text-dark:focus {
   background: #000;
   display: none;
   list-style: none;
-  padding: 0.8rem;
+  padding: 2rem;
+
   
   border-radius: 6px;
 }
-
+.mysticLayer_dropdown li{
+  padding-bottom: 15px;
+  font-size: 15px;
+}
 .essenceDrop_down:hover .mysticLayer_dropdown {
   display: block;
 }
@@ -10180,3 +10184,127 @@ h6,
     transform: translateY(0);
   }
 }
+.recommended-section {
+    padding: 4rem 2rem;
+    
+    
+  }
+  .recommended-slider{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 30px;
+    
+  }
+
+  .recommended-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    
+  }
+
+  .recommended-header h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #222;
+  }
+
+  .nav-arrows .arrow-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .nav-arrows .arrow-btn:hover {
+    background: #ccc;
+  }
+
+  .recommended-slider {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .blog-card {
+    flex: 0 0 500px;
+    background: transparent;
+    
+    border-radius: 15px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.714);
+    padding: 1rem;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+
+  .blog-card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .blog-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .blog-card h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+    color: #333;
+  }
+
+  .blog-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.4;
+  }
+
+  .arrow-icon {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .arrow-icon .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .arrow-icon .arrow {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+
+  .blog-card:hover .arrow {
+    transform: rotate(45deg) translateY(-3px);
+  }
+
+  .arrow-icon:hover .circle {
+    background: #222;
+  }
+
+  /* Optional Scrollbar Hide */
+  .recommended-slider::-webkit-scrollbar {
+    display: none;
+  }
+  .recommended-slider {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }

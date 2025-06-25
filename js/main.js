@@ -159,6 +159,18 @@
             }
         }
     });
+
+    const leftArrow = document.querySelector('.arrow-btn.left');
+  const rightArrow = document.querySelector('.arrow-btn.right');
+  const slider = document.querySelector('.recommended-slider');
+
+  rightArrow.addEventListener('click', () => {
+    slider.scrollBy({ left: 300, behavior: 'smooth' });
+  });
+
+  leftArrow.addEventListener('click', () => {
+    slider.scrollBy({ left: -300, behavior: 'smooth' });
+  });
     
 })(jQuery);
 
