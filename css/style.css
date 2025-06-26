@@ -10388,8 +10388,8 @@ h6,
   }
 
   .arrow-icon .circle {
-    width: 25px;
-    height: 25px;
+    width: 0px;
+    height: 0px;
     border-radius: 50%;
     background: #000;
     display: flex;
