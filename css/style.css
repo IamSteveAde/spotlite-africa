@@ -10378,9 +10378,32 @@ h6,
     }
 
     .arrow-icon .circle {
-      width: 36px;
-      height: 36px;
+      width: 16px;
+      height: 16px;
     }
+    .arrow-icon {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .arrow-icon .circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .arrow-icon .arrow {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
   }
   html{
     scroll-behavior: smooth;
