@@ -9638,6 +9638,8 @@ a.text-dark:hover, a.text-dark:focus {
   background: linear-gradient(to right, #e94e1b, #f68b1e);
   transform: scale(1.05) translateY(-2px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  text-decoration: none;
+  color: black;
 }
 
 
@@ -10216,7 +10218,7 @@ h6,
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 10%;
-    font-size: 1.5rem;
+    font-size: 13px;
     cursor: pointer;
     transition: background 0.3s ease;
   }
@@ -10236,7 +10238,7 @@ h6,
     flex: 0 0 500px;
     background: transparent;
     
-    border-radius: 15px;
+  
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.714);
     padding: 1rem;
     position: relative;
@@ -10253,7 +10255,7 @@ h6,
     width: 100%;
     height: 280px;
     object-fit: cover;
-    border-radius: 15px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.714);
   }
 
   .blog-card h3 {
@@ -10330,6 +10332,16 @@ h6,
     .blog-card img {
       height: 150px;
     }
+     .nav-arrows .arrow-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10%;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
   }
 
   @media (max-width: 480px) {
@@ -10341,6 +10353,21 @@ h6,
       flex: 0 0 200px;
       padding: 0.75rem;
     }
+     .nav-arrows .arrow-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10%;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: none;
+  }
+  .recommended-header h2{
+    font-size: 15px;
+    margin-bottom: -350px;
+  }
 
     .blog-card h3 {
       font-size: 1rem;
