@@ -10355,3 +10355,6 @@ h6,
       height: 36px;
     }
   }
+  html{
+    scroll-behavior: smooth;
+  }
