@@ -128,3 +128,54 @@
     font-size: 1.1rem;
   }
 }
+  table {
+        width: 100%;
+        max-width: 600px;
+        border-collapse: collapse;
+        overflow: hidden;
+        box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        background: white;
+    }
+
+    thead {
+        background: linear-gradient(135deg, #ff7eb3, #ff758c);
+        color: white;
+    }
+
+    thead th {
+        padding: 14px 20px;
+        text-align: left;
+        font-size: 1.1em;
+        letter-spacing: 0.5px;
+    }
+
+    tbody td {
+        padding: 14px 20px;
+        border-bottom: 1px solid #eee;
+        font-size: 1em;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #fdf3f6;
+    }
+
+    tbody tr:hover {
+        background-color: #ffe4ec;
+        transition: 0.3s;
+    }
+
+    /* Badge style for numbers */
+    .badge {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 0.9em;
+        color: white;
+    }
+
+    .pink { background-color: #ff5d8f; }
+    .purple { background-color: #9c6bff; }
+    .blue { background-color: #4da6ff; }
+    .orange { background-color: #ff914d; }
